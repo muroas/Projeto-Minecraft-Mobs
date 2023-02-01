@@ -1,107 +1,99 @@
 * {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 15px 0 10px;
+    padding: 0;
     color: white;
     font-size: large;
     font-family: "minecraftfonte";
+    box-sizing: border-box;
 }
+
 @font-face {
     font-family: "minecraftfonte";
     src: url("fontes/Minercraftory.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 hr{
     border: solid 2px rgb(22, 14, 14);
 }
 /*Titulo*/
 h1{
-    margin-top: 10px;
-    background-color: rgb(0, 54, 0);
-    width: 500px; 
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    background-color: transparent;
+    width: 500px;
     color: white;
     padding: 3px;
-    border: 3px solid #003008;
+    border: 3px solid #8b5cf6;
     text-align: center;
-    justify-content: center;
-    display: flex;
     border-radius: 10px;
-    box-shadow: 0 0 5px 6px rgba(0, 0, 0, 0.493); 
     font-weight: normal;
     font-size: xx-large;
 }
 
 /*H2*/
 .Pacíficos{
-    background-color: rgb(0, 54, 0);
-    width: 150px; 
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    padding: 3px;
-    border: 3px solid #003008;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 0 0 5px 6px rgba(0, 0, 0, 0.493); 
-    font-weight: normal;
-}
-.Neutros {
-    background-color: rgb(0, 54, 0);
+    background-color: transparent;
     width: 140px; 
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     color: white;
     padding: 3px;
-    border: 3px solid #003008;
-    text-align: center;
-    justify-content: center;
-    display: flex;
+    border: 1px solid #8b5cf6;
+    text-align: center;  
     border-radius: 10px;
-    box-shadow: 0 0 5px 6px rgba(0, 0, 0, 0.493);
     font-weight: normal;
 }
 .Ofensivos {
-    background-color: rgb(0, 54, 0);
-    width: 150px; 
-    margin-left: auto;
-    margin-right: auto;
+    background-color: transparent;
+    width: 140px; 
+    margin: auto;
     color: white;
     padding: 6px;
-    border: 3px solid #003008;
+    border: 1px solid #8b5cf6;
     text-align: center;
-    justify-content: center;
-    display: flex;
     border-radius: 10px;
-    box-shadow: 0 0 5px 6px rgba(0, 0, 0, 0.493);
+    font-weight: normal;
+}
+.Neutros {
+    background-color: transparent;
+    width: 140px; 
+    margin: auto;
+    color: white;
+    padding: 3px;
+    border: 1px solid #8b5cf6;
+    text-align: center;
+    border-radius: 10px;
     font-weight: normal;
 }
 .PersonagensPrincipais {
-    background-color: rgb(0, 54, 0);
+    background-color: transparent;
     width: 250px;
-    margin-left: auto; 
-    margin-right: auto;
+    margin: auto;
     color: white;
     padding: 3px;
-    border: 3px solid #003008;
+    border: 1px solid #8b5cf6;
     text-align: center;
-    justify-content: center;
-    display: flex;
     border-radius: 10px;
-    box-shadow: 0 0 5px 6px rgba(0, 0, 0, 0.493);
     font-weight: normal;
 }
 
 /*body*/
+
 body{
-    background-image:  url("Imagens/terra.png");
-    backdrop-filter: blur(1px); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #09090a;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: none;
+}
+
 p{
     border-radius: 10px;
     background-image: url("Imagens/fundo\ cinza.png");
@@ -116,31 +108,28 @@ p{
 
 /*Imagens*/
 .pacificos {
-    list-style: none;
     display: flex;
-    justify-content: space-around;
-    margin-right: 20px;
+    justify-content: center;
     text-align: center;
+    gap: 40px;
 }
 .ofensivos {
-    list-style: none;
     display: flex;
-    justify-content: space-around;
-    margin-right: 20px;
+    justify-content: center;
     text-align: center;
+    gap: 40px;
 }
 .neutros {
-    list-style: none;
     display: flex;
-    justify-content: space-around;
-    margin-right: 20px;
+    justify-content: center;
     text-align: center;
+    gap: 40px;
 }
 .personagens    {
-    list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
+    gap: 40px;
 }
 
 /*cada imagem pacifico*/
@@ -285,4 +274,17 @@ p{
 }
 .alex:hover{
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .pacificos, .neutros, .personagens,.ofensivos {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        width: 250px;
+    }
 }
