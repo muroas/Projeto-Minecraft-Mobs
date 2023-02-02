@@ -90,17 +90,25 @@ main {
     flex-direction: column;
 }
 
-ul{
+ul {
     list-style-type: none;
+    margin-bottom: 56px;
 }
 
-p{
+p.infosP {
+    text-align: center;
+    max-width: 100%;
+    margin: 56px auto;
+    padding: 0 30px;
+    font-size: medium;
+}
+
+P.infos {
     border-radius: 10px;
     background-image: url("Imagens/fundo\ cinza.png");
     font-size: small;
     width: 150px;
-    margin-left: auto; 
-    margin-right: auto;
+    margin: auto;
     padding: 3px;
     border: 1px solid #7575757e;
     text-shadow: 0 0 6px rgb(0, 0, 0);
@@ -109,178 +117,71 @@ p{
 /*Imagens*/
 .pacificos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     gap: 40px;
 }
 .ofensivos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     gap: 40px;
 }
 .neutros {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     gap: 40px;
 }
-.personagens    {
+.personagens {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     gap: 40px;
 }
 
-/*cada imagem pacifico*/
-.porco {
+/*Animações Pacífico*/
+.mobsPacificos {
     -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
     filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
     transition: transform .3s;
 }
-.porco:hover{
-    transform: scale(1.2);
-}
-.vaca {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.vaca:hover{
-    transform: scale(1.2);
-}
-.ovelha {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.ovelha:hover{
-    transform: scale(1.2);
-}
-.villager {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.villager:hover{
-    transform: scale(1.2);
-}
-.galinha {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.galinha:hover{
+.mobsPacificos:hover{
     transform: scale(1.2);
 }
 
-/*Ofensivos*/
-.bruxa {
+/*Animações Ofensivos*/
+.mobsOfensivos {
     -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
     filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
     transition: transform .3s;
 }
-.bruxa:hover{
-    transform: scale(1.2);
-}
-.creeper {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.creeper:hover{
-    transform: scale(1.2);
-}
-.esqueleto {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.esqueleto:hover{
-    transform: scale(1.2);
-}
-.invocador {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.invocador:hover{
-    transform: scale(1.2);
-}
-.zombie {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.zombie:hover{
+.mobsOfensivos:hover{
     transform: scale(1.2);
 }
 
-/*Neutros*/
-.aranha {
+/*Animações Neutros*/
+.mobsNeutros {
     -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
     filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
     transition: transform .3s;
 }
-.aranha:hover{
-    transform: scale(1.2);
-}
-.enderman {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.enderman:hover{
-    transform: scale(1.2);
-}
-.irongolen {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.irongolen:hover{
-    transform: scale(1.2);
-}
-.lobo {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.lobo:hover{
-    transform: scale(1.2);
-}
-.piglin {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.piglin:hover{
+.mobsNeutros:hover{
     transform: scale(1.2);
 }
 
-/*personagens*/
-.steve {
+/*Animações personagens*/
+.mobsPersonagens {
     -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
     filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
     transition: transform .3s;
 }
-.steve:hover{
+.mobsPersonagens:hover{
     transform: scale(1.2);
-}
-.alex {
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 7px rgb(0, 0, 0));
-    transition: transform .3s;
-}
-.alex:hover{
-    transform: scale(1.2);
-}
-
-@media screen and (max-width: 768px) {
-    .pacificos, .neutros, .personagens,.ofensivos {
-        width: 100%;
-        flex-direction: column;
-    }
 }
 
 @media screen and (max-width: 768px) {
